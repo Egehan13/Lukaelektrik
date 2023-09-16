@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luka Elektrik</title>
+</head>
+<body>
+
+  <header>
+    <img src="lukaelektrik.png" width="250" height="187">
+    <a href="#about" class="main-class">Hakkımızda</a>
+    <a href="#services" class="main-class">Hizmetlerimiz</a>
+    <a href="#portfolio" class="main-class">Portföy</a>
+    <a href="#contact" class="main-class">İletişim</a>
+    <a href="" class="main-class">English</a>
+  </header>
+
+  <div id="space-h"></div>
+  <section id="hero">
+    <div class="container">
+      <h2 class="main">Main </h2>
+      <p class="main">Main subtitle text.</p>
+      <div class="space"></div>
+      <!-- Button.css by Egehan -->
+      <a href="#contact" class="btn-slide">Bize Ulaşın</a>
+      <div id="space"></div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="project1.jpg" alt="Proje 1">
+          <p>Proje Açıklaması</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="project2.jpg" alt="Proje 2">
+          <p>Proje Açıklaması</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>Hakkımızda</h2>
+      <p>Main text</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Hizmetlerimiz</h2>
+      <ul class="services-list">
+        <li>Service 1</li>
+        <li>Service 2</li>
+        <li>Service 3</li>
+        <li>Service 4</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portföy</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="project1.jpg" alt="Proje 1">
+          <p>Proje Açıklaması</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="project2.jpg" alt="Proje 2">
+          <p>Proje Açıklaması</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>İletişim</h2>
+      <p>Bize ulaşın ve hizmetlerimiz hakkında daha fazla bilgi alın.</p>
+      <div class="contact-details">
+        <a href="tel:123456789" class="contact-class">123-456-789</a>
+        <a href="mailto:info@lukaelektrik.com " class="contact-class">info@lukaelektrik.com</a>
+        <a href="mailto:info@lukaelektrik.net" class="contact-class">info@lukaelektrik.net</a>
+        <a href="mailto:info@lukaelektrik.org" class="contact-class">info@lukaelektrik.org</a>
+        <a href="mailto:info@lukaelektrik.org" class="contact-class">info@lukaelectric.net</a>
+        <a href="mailto:info@lukaelektrik.org" class="contact-class">info@lukaelectric.org</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Luka Elektrik</p>
+      <h4>Buttons made with:</h4>
+      <a href="https://egehan13.github.io/button.github.io/" class="button-css">Button.css by Egehan</a>
+    </div>
+  </footer>
+</body>
+<style>
+    /* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x:hidden;
+  transform: translateY(50px);
+  opacity:0;
+  animation: fadeInUp 1s forwards 0.5s, slideInFromBottom 0.5s forwards 0.5s;
+}
+*{
+  box-sizing:border-box;
+}
+*::selection{
+  background:#3f94d1;
+  color:white;
+}
+a{
+  color:#3f94d1;
+  text-decoration:none;
+}
+.main-class{
+  color:#3f94d1;
+  margin:25px;
+}
+.main-class:hover{
+  color:black;
+}
+#space{
+  height:75px;
+}
+#space-h{
+  height:120px;
+}
+.btn-slide {
+    position: relative;
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #3f94d1;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    text-decoration:none;
+    transform: translateY(50px);
+    opacity:0;
+    animation: fadeInUp 1.5s forwards 1s, slideInFromBottom 1s forwards 1s;
+  }
+  
+  .btn-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateY(100%);
+    transition: transform 0.3s;
+    z-index: -1;
+  }
+  
+  .btn-slide:hover {
+    transform: translateY(-5px) rotateX(20deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform:scale(1.1);
+  }
+  
+  .btn-slide:hover::before {
+    transform: translateY(0);
+  }
+  
+.button-css{
+  color:white;
+  text-decoration:none;
+}
+.button-css:hover{
+  color:#3f94d1;
+}
+.main{
+  color:black;
+  transform: translateY(50px);
+  opacity:0;
+  animation: fadeInUp 1.5s forwards 1s, slideInFromBottom 1s forwards 1s;
+}
+.space{
+  height:25px;
+}
+/* Basic styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: white;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  height:125px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.contact-class{
+  color:#3f94d1;
+  transition:0.2s;
+}
+.contact-class:hover{
+  color:black;
+  transform:scale(1.05);
+}
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li:hover {
+  color: #3f94d1;
+}
+
+/* Hero Section */
+#hero {
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 150px 0;
+  position: relative;
+}
+
+#hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Sections */
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Portfolio */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  transition:0.2s;
+}
+.portfolio-grid:hover{
+  transform:scale(1.05);
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-item .portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-item p {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Contact */
+.contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-details {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width:600px){
+  header{
+    background-color: white;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  }
+  img{
+    margin:auto;
+    display:block;
+    width:50%;
+  }
+}
+</style>
+</html>
